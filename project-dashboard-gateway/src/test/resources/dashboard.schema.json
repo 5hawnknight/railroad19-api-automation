@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "title": {
+        "type": "string",
+        "pattern": "^(.*)$"
+      },
+      "division": {
+        "type": "string",
+        "pattern": "^(.*)$"
+      },
+      "project_owner": {
+        "type": "string",
+        "pattern": "^(.*)$"
+      },
+      "budget": {
+        "type": "number"
+      },
+      "status": {
+        "type": "string",
+        "pattern": "^(.*)$"
+      },
+      "created": {
+        "type": "string",
+        "pattern": "^(.*)$"
+      },
+      "modified": {
+        "type": "string",
+        "pattern": "^(.*)$"
+      }
+    },
+    "required": [
+      "title",
+      "division",
+      "project_owner",
+      "budget",
+      "status",
+      "created",
+      "modified"
+    ]
+  }
+}

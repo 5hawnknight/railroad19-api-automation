@@ -1,0 +1,3 @@
+rootProject.name = 'railroad19-api-automation'
+
+include 'project-dashboard-gateway'
