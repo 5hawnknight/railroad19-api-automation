@@ -28,7 +28,7 @@
         "pattern": "^(.*)$"
       },
       "modified": {
-        "type": "string",
+        "type": ["string", "null"],
         "pattern": "^(.*)$"
       }
     },
