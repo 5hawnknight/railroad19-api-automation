@@ -20,6 +20,15 @@ public class DataModelSpec {
         assertThat(MOCK_DATA, matchesJsonSchemaInClasspath("dashboard.schema.json"));
     }
 
+    @Test(enabled = false)
+    public void checkForNulls() {
+
+        /*
+            the idea behind this test is to verify only projects with a new status can
+            have a modified date of null
+         */
+    }
+
     private String get(String url) {
         try {
             return Unirest.get(url).header("Accept", "application/json").asString().getBody();
